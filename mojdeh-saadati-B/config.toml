@@ -1,0 +1,76 @@
+baseURL = "https://example.com"
+title = "Mojdeh Saadati"
+languageCode = "en"
+enableInlineShortcodes = true
+theme = "soho"
+summarylength = 1000
+enableEmoji = true
+
+[params]
+author = "Mojdeh Saadati"
+description = "Personal Website"
+
+## Set one of:
+# gravatar = "soho@example.com"
+profilePicture = "images/mojdeh.png"
+
+#copyright = "Mojdeh Saadti"
+#license = "CC BY-SA 4.0"
+#licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+
+## Set custom theme color.
+# themeColor = "#fc2803"
+
+## Set custom CSS and/or JS to override site defaults.
+customCss = ["css/blog.css"]
+customJs = ["js/blog.js"]
+
+  ## Set as many as you want.
+  [[params.socialIcons]]
+  icon = "fa-linkedin"
+  title = "Linkedin"
+  url = "https://www.linkedin.com/in/mojdeh-saadati"
+
+  [[params.socialIcons]]
+  icon = "fa-github"
+  title = "GitHub"
+  url = "https://github.com/mojdeh-saadati"
+
+  [[params.socialIcons]]
+  icon = "fa-twitter"
+  title = "Twitter"
+  url = "https://www.twitter.com/saadati_mojdeh"
+
+
+[menu]
+  
+
+  [[menu.main]]
+  name = "Access to Papers"
+  weight = 100
+  identifier = "Publications"
+  url = "https://scholar.google.com/citations?user=IGMFHTgAAAAJ&hl=en"
+
+  [[menu.main]]
+  name = "CV"
+  identifier = "CV"
+  weight = 300
+  url = "https://drive.google.com/file/d/1lb3T6AYPNRyIBtN5m1wZYQV8BZgeLd1L/view?usp=sharing"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[markup]
+
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true # if false, you need to provide you own custom CSS
+  style = "monokai"
+  tabWidth = 4

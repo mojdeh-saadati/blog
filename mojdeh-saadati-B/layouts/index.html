@@ -1,0 +1,71 @@
+{{ define "main" -}}
+<!--    {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.MainSections -}}  -->
+<!--    {{- $paginator := .Paginate $pages -}} 
+
+    {{ range $paginator.Pages }}
+      <article class="post">
+        <h1 class="post-title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h1>
+
+        <div class="post-date">
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> &middot; {{ .ReadingTime }} min read
+        </div>
+
+        <div>
+          {{ .Summary }} 
+        </div>
+
+        <div class="read-more-link">
+          <a href="{{ .Permalink }}">Read More</a>
+        </div>
+      </article>
+    {{- end }}
+	
+	 --> 
+		<html>
+
+		<div class= "main-block">
+		<h1> Welcome to my website!  </h1>	
+
+
+		My name is Mojdeh Saadati, and I am a Ph.D. student in Computer Science at Iowa State University of Science and Technology- College of Liberal Arts and Sciences.
+		My research interest lies in the study of the structure of machine learning software along with its application in various domains, specifically social good and public health. 
+		In my Ph.D., I am focusing on improving machine learning software to mitigate social biases in their decision-making.
+		Also, I devoted my master to study causal inference and 
+		missingness mechanism, two fundamental problems in data science. As a result of this research, I devised an algorithm
+		to measure the causal effect of two sets of variables under data with an arbitrary missing mechanism. During my research experience, I have collaborated on several public health projects published in top medical journals. 
+			
+		
+		<h2> Education  </h2>
+		<li> B.S., Computer Science, University of Tehran, 2016	</li>
+		<li> M.S., Computer Science, Iowa State University, 2020 </li>
+		<li> Ph.D., Computer Science, Iowa State University, Current</li>
+		
+
+
+		</ul>   
+		
+		<h2> Publications </h2>
+		<ul>
+		<li> M Parsaeian, M Mahdavi, M Saadati, P Mehdipour, S Khatibzadeh, S Shahraz, F Farzadfar; Introducing an efficient sampling method for national surveys with limited sample sizes: application to a national study to determine quality and cost of healthcare. (BMC public health journal) </li>
+		<li> M Saadati, J Tian; Adjustment criterion for recovering causal effects from missing data. (ECML-PKDD) </li>
+		<li> M Saadati, S Shihab, M Rahman; Movie recommender systems: implementation and performance evaluation, based on user-user collaborative filtering, item-item collaborative filtering, content-based recommendation, SVD, and neural networks. (Technical report uploaded to arXiv)</li>
+		<li> S Shahraz, AG Pittas, M Saadati, CP Thomas, CM Lundquist, DM Kent; Change in testing, awareness of hemoglobin A1c result, and glycemic control in U.S. adults, 2007-2014. (Jama 318 (18); 1825-1827) </li>
+		</ul>
+		
+		
+		</ul>   
+		
+		<h2> Contact Info</h2>
+		<ul>
+		<li> msaadati@iastate.edu </li>
+		</ul>
+		
+		</div>
+		
+		</html>
+
+  {{ template "_internal/pagination.html" . }}
+  
+{{- end }}
